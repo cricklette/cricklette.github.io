@@ -1,0 +1,40 @@
+body{
+    background-color: rgb(4, 4, 4);
+}
+.font{
+    color: whitesmoke;
+    font-family:"candara";
+}
+
+tr > td{
+    color: whitesmoke;
+    font-family:"candara";
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+}
+
+.line{
+    height:1px;
+    border-width:0;
+    color:rgb(255, 255, 255);
+    background-color:rgb(255, 255, 255);
+}
+
+.column {
+    float: left;
+    width: 33.33333333333333%;
+    height: auto;
+    font-family: "candara";
+    color: whitesmoke;
+    text-align: center;
+}
+
+.responsive {
+    width: 100%;
+    max-width: 500;
+    height: auto;
+  }
+
+
