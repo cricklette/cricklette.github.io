@@ -98,6 +98,8 @@
 
             images.forEach(image => {
             image.addEventListener("click", () => {
+                modalImg.src = image.src;
+                modaltxt.innerHTML = image.alt;
                 modal.classList.add("appear");
                 close.addEventListener("click", () => {
                     modal.classList.remove("appear");
