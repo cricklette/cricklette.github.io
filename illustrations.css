@@ -1,14 +1,108 @@
-body{
-    background-color: rgb(4, 4, 4);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "calibri";
 }
+
+
+body{
+    background-color: rgb(87, 87, 87);
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+}
+.heading{
+    color:whitesmoke;
+    text-align: center;
+}
+.images{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1em;
+    margin: 0 1em;
+}
+
+.images img {
+    width: 100%;
+    cursor: pointer;
+    transition: 0.3s all ease;
+
+}
+
+.images img:hover{
+    transform:scale(0.9);
+}
+
+.modal{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0,0.7);
+    color: white;
+    z-index: 1;
+    overflow: auto;
+    opacity:0;
+    pointer-events: none;
+}
+
+.modalcontent{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalimage{
+    width: 80%;
+    max-width: 900px;
+    animation: zoom 0.3s linear;
+
+}
+@keyframes zoom{
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform:scale(1)
+    }
+}
+
+.modaltxt{
+    margin-top: 1em;
+}
+
+.close{
+    position:absolute;
+    top:1em;
+    right: 1.5em;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.modal.appear{
+    opacity:1;
+    pointer-events: all;
+}
+
+
+
+
+
+
+
+
 .font{
     color: whitesmoke;
-    font-family:"candara";
+    font-family:"calibri";
 }
 
 tr > td{
     color: whitesmoke;
-    font-family:"candara";
+    font-family:"calibri";
     padding-top: 10px;
     padding-right: 30px;
     padding-bottom: 10px;
@@ -26,7 +120,7 @@ tr > td{
     float: left;
     width: 33.33333333333333%;
     height: auto;
-    font-family: "candara";
+    font-family: "calibri";
     color: whitesmoke;
     text-align: center;
 }
@@ -38,3 +132,6 @@ tr > td{
   }
 
 
+
+
+  
